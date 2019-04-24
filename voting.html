@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/evote.css">
+<link rel="stylesheet" type="text/css" href="file:///C:/Users/Admin/Desktop/New%20folder/fontawesome-free-5.8.1-web/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Niconne|Lobster" rel="stylesheet">
+<style>
+.digit {
+background: url("image/vot.jpg") no-repeat center fixed ;
+background-size: cover;
+background-position: bottom;
+}
+.dig{
+background-color: rgba( 0, 0, 0, 0.9);
+height: 200px;
+width: 100%;
+	
+}
+nav{
+	position: relative;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color: #f58634;
+}
+.mages img {
+	margin: 50px;
+	display: inline;
+}
+.contain{
+	position: relative;
+	display: inline;
+} 
+.but{
+	text-align: center;
+	display: block;
+}
+.but button{
+	background-color: white;
+	padding: 5px;
+	border: none;
+	color: black;
+	font-weight: bolder;
+}
+.overlay{
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	background-color: green;
+	opacity: 0.8;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	transition: 1s ease;
+}
+.contain:hover .overlay {
+  bottom: -450%;
+  height: 1000%;
+}
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+.note{
+	margin-top: 40px;
+	color: red;
+}
+</style>
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Are you sure you want to vote")) {
+    txt = "Voting Successful!";
+  } else {
+    txt = "Cancelled!";
+  }
+  document.getElementByClass("but").innerHTML = txt;
+}
+</script>
+</head>
+<body>
+<nav>
+    <div class="nav-links">
+      <div class="logoimage">
+        <img src="image/evote3.jpg" width="177px" height="52px" style="margin-left: 50px;">
+    </div>
+      <ul >
+  <li><a href="#">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="#">Political Parties</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Election</a>
+
+    <div class="content">
+    <a href="#">Check Result</a>
+    <a href="#">Officials</a>
+    <a href="#">Candidates</a>
+    <a href="#">Parties</a>
+    </div>
+  </li>
+  <li class="dropdown"> <a href="register.html" class="dropbtn">Register</a>
+  <div class="content">
+    <a href="#">Check Result</a>
+    <a href="#">Officials</a></li>
+  </div>
+  <div class="register">
+  <a id="log" href="log">Log In</a>
+    <a id="sign" href="sign">Sign In</a>
+    </div>
+</ul>
+  </div>
+</nav>
+<div class="hore" style="margin-top: 10px;" > <a href="
+#">Home </a>>> Presidential Voting page</div>
+</div>
+<div class="digit">
+	<div class="dig">
+	<div class="horeg" style="margin-top: 10px;"></div>
+</div>
+</div>
+<div class="note"> * Note: You cannot vote for more than one Candidate.
+</div>
+<div class="mages">
+	<div class="contain">
+ <img src="image/gpn.jpg" height="180px" width="180px" class="img" >
+ <div class="overlay">
+<div class="text">Samuel Eke<br>	Green Party of Nigeria (GPN)
+
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div>
+</div>
+</div>
+<div class="contain">
+ <img src="image/sdp.jpg" height="180px" width="180px" class="immg" >
+ <div class="overlay">
+ <div class="text">Donald Duke	<br>
+ Social Democratic Party (SDP)
+ <div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div></div>
+</div>
+</div>
+<div class="contain">
+ <img src="image/mpn.jpg" height="180px" width="180px" class="immag">
+ <div class="overlay">
+ <div class="text">Hamisu Santuraki	<br>Mega Party of Nigeria (MPN)
+ <div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div></div></div></div>
+<div class="contain">
+ <img src="image/apa.jpg" height="180px" width="180px" class="immg" >
+ <div class="overlay">
+<div class="text">Aliyu Ibrahim<br>	African People Alliance (APA)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/pdp.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Atiku Abubakar<br>	Peoples Democratic Party (PDP)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/ypp.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Kingsley Moghalu<br>	Young Progressives Party (YPP)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/dpp.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Ilongwo John<br>	Democratic Peoples Party (DPP)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/ACPN.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Obiageli Ezekwesili<br>	Allied Congress Party of Nigeria (ACPN)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/ncp.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Yunusa Tanko<br>	Nationalist Congress Party (NCP)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/kowa.png" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Samuel Fagbbenr-Byron	<br>KOWA Party
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/id.jpg" height="180px" width="180px" > <div class="overlay">
+<div class="text">Nnamdi Madu<br>	Independent Democrats (ID))
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/anrp.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Tope Fasua<br>	Abundant Nigeria Renewal Party (ANRP)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div></div>
+</div>
+</div>
+<div class="contain">
+ <img src="image/accord.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Isaac Ositelu<br>	Accord Party
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/da.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Frank Ukonga<br>	Democratic Alternative (DA)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div></div>
+</div>
+</div>
+<div class="contain">
+ <img src="image/apc.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Muhammadu Buhari<br>	All Progressives Congress (APC)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div></div>
+</div>
+<div class="contain">
+ <img src="image/adc.jpg" height="180px" width="180px" >
+  <div class="overlay">
+<div class="text">Obadiah Mailafia<br>	African Democratic Congress (ADC)
+<div class="but">
+<button onclick="myFunction()"> <a href="#"> vote</a> </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<footer>
+<div class="footer">
+  <div class="footnav">
+    <p id="links"><span> Quick</span> Links</p>
+    <ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Political Parties</a></li>
+  <li><a href="#">Election</a></li>
+  <li><a href="#">Register</a></li>
+</ul>
+  </div>
+  <div class="contact"> 
+   <p id="contact"><span>Contact</span>  Us </p>
+   E-mail:<p id="con"> moyinoluwa.hunsa@gmail.com</p>
+   Phone:<p id="con">+2348129383956</p>
+   <p id="soc"> <span>Social</span> Media</p>
+   <i class="fab fa-facebook-f fa-2x" style="color: rgba(255, 255, 255, 0.5);"></i>
+   <i class="fab fa-twitter fa-2x" style="color: rgba(255, 255, 255, 0.5);"></i>
+   <i class="fab fa-instagram fa-2x" style="color: rgba(255, 255, 255, 0.5);"></i>
+<i class="fab fa-whatsapp fa-2x" style="color: rgba(255, 255, 255, 0.5);"></i>
+<i class="fab fa-github fa-2x" style="color: rgba(255, 255, 255, 0.5);"></i>
+<i class="fab fa-linkedin-in fa-2x" style="color: rgba(255, 255, 255, 0.5);"></i>
+  </div>
+  <div class="comment">
+    <p id="comment"><span> Do you</span> have a Comment?</p>
+    <form>
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+  </form>
+  <textarea maxlength="500" rows="3" cols="40" placeholder="Message"></textarea><br>
+  <button>SEND</button>
+  </div>
+  </div>
+</div>
+<div class="copy">
+  copyright Hunsa Moyinoluwa&copy;2019.
+  <p id="ti"></p>
+    <script>
+    document.getElementById('ti').innerHTML=Date();
+  </script>
+  
+</div>
+</footer>
+
+
+</body>
+</html>
