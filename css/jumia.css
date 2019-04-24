@@ -1,0 +1,22 @@
+.logo{
+	height: 70px;
+	filter: grayscale(1);
+	margin-right:5px;
+}
+	
+img{
+	vertical-align: middle;
+	border-style: none;
+}
+.style{
+	background-color: red;
+	padding: 10px 30px;	
+}
+}
+.navlogo{
+	height: 100px;
+}
+.search-input{
+	background-color: #efefef;
+	border: 0px;
+}

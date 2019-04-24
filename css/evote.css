@@ -1,0 +1,516 @@
+*{
+box-sizing: border-box;
+margin:0px;
+}
+ 
+/*nav bar*/
+.v{
+	font-family: Niconne;
+	color: green;
+	font-weight: bold;
+	font-size: 3em;
+}
+main .v{
+	font-family: Niconne;
+	color: green;
+	font-weight: bold;
+	font-size: 10em;
+	
+}
+.ote{
+	font-family: Niconne;
+	color: green;
+	font-weight: bold;
+	font-size: 2em;
+}
+main .logoimage .ote{
+	font-family: Niconne;
+	color: green;
+	font-weight: bold;
+	font-size: 8em;
+	
+}
+.nav-links .ee{
+	color:#f58634;
+	border-bottom: 2px solid #f58634;
+}
+main .ee{
+	color:#f58634;
+	font-size: 5em;
+	font-weight: bold;
+}
+ main .logoimage{
+ 	text-align: center;
+ 	margin-top: 200px;
+}
+ nav div, .nav .nav-links, ul, li{
+	display: inline;
+}
+nav li{
+	margin-left: 50px;
+	padding-bottom: 5px;
+	text-align: center;
+	margin-top: 25px;
+}
+nav{
+	background-color: rgba(40,40,40);
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0px;
+	line-height:1;
+
+}
+nav ul li a{
+	text-decoration: none;
+	color: white;
+}
+nav ul li a:hover{
+	text-decoration: none;
+	color: #f58634;
+	border-bottom: 1px dashed #f58634; 
+}
+nav ul li a:active{
+	text-decoration: none;
+	color: #f58634;
+	border-bottom: 1px dashed #f58634; 
+}
+#log{
+	margin-left: 300px;
+	color: white;
+	font-size: 1em;
+	padding: 5px 5px 5px 15px;
+	background-color: #f58634;
+	border-radius: 5px;
+}
+#sign{
+	margin-left: 10px;
+	color: white;
+	font-size: 1em;
+	padding: 5px 5px 5px 15px;
+	background-color: rgba(255,255,255,0.3);
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 5px;
+}
+.dropbtn{
+  color: white;
+  text-align: center;
+}
+.dropdown a:hover{
+	 border:none;
+}
+ .dropdown{
+	display: inline-block;
+}
+.content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .content {
+  display: block;
+}
+/*nav bar*/
+
+.item-10, 
+.item-20, 
+.item-30 {
+  display: inline;
+  width: 50%;
+	color: white;
+	text-align: center;
+	margin-left: 10px;
+	font-size: 5em;
+	font-weight: bold;
+}
+
+.item-10{
+	animation-name: anim-10;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	position: relative;
+	margin-left: 5px;
+}
+
+.item-20{
+	animation-name: anim-20;
+	animation-duration: 10s;
+	animation-iteration-count: 1;
+	position: relative;
+	margin-left: 5px;
+}
+
+.item-30{
+	animation-name: anim-30;
+	animation-duration: 15s;
+	animation-iteration-count: 1;
+	position: relative;
+	margin-left: 5px;
+}
+
+@keyframes anim-10 {
+	0% { right: -50%; }
+  25% { right: 0%;  }
+   50% { right: 0%;   }
+  75% { right: 0%;  }
+   100% { right: 0%; }
+}
+
+@keyframes anim-20 {
+	0% { right: -100%;  }
+  25% { right: 0%;  }
+   50% { right: 0%;  }
+  75% { right: 0%;  }
+   100% { right:0% ;  }
+
+}
+
+@keyframes anim-30 {
+	0% { right: -100%;  }
+  25% { right: 0%;  }
+   50% { right: 0%;  }
+  75% { right: 0%; }
+   100% { right: 0%;  }
+}
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  width: 80%;
+  font-size: 2em;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	color: white;
+	font-weight: bold;
+	margin-top: 350px;
+	text-align: center;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 10%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 10%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 10%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+ .ee, .v, .ote, .item-10, .item-20, .item-30 {
+	display: inline;
+}
+.avo{
+background-color: white;
+margin-top: 320px;
+}
+#what{
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 50px;
+}
+.about{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+.about div{
+	width: 80%;
+	justify-content: all;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	margin-left: 30px;
+}
+	.gen, .adv, .adopt, .vot{
+	color:  #f58634;
+	font-weight: bold;
+
+}
+.vote, .general, .advantages,.adoption{
+color: rgba(0, 0, 0, 0.7);
+}
+#more{
+	display: none;
+}
+.about button{
+	background-color:  #f58634;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: none;
+}
+.con-us{
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	height: 250px;
+	color: white;
+	text-align: center;
+}
+.cont-us{
+	font-size: 3em;
+	padding-top: 30px;
+}
+.con-us button{
+	color: white;
+	border: none;
+	border-radius: 5px;
+	background-color: #f58634;
+	padding: 5px;
+}
+#con-us{
+	width: 60%;
+	margin:auto;
+	font-size: 
+}
+.cont-us span{
+	color: #f58634;
+}
+
+#email{
+			margin: 10px 0px;
+			width: 50%;
+		}
+		#password{
+			margin: 10px 0px;
+			width: 50%;
+		}
+.pass{
+			font-size: 10px;
+			margin-left: 315px;
+		}
+		.pass a{
+			color: green;
+		}
+
+			.neww{
+			background-color:white;
+			padding: 50px;
+			width: 100%;
+		}
+		.neww input{
+			border-radius: 5px;
+			border: 1px solid black;
+			padding-left: 5px;
+		}
+		#newm{
+			color: green;
+		}
+		.neww button {
+			background-color:  #f58634;
+			color:white;
+			border-radius: 5px;
+			border: none;
+		}
+		.neww button a {
+			color:white;
+		}
+		.neww a:hover{
+			text-decoration: none;
+			font-size: 18px;
+		}
+		.lin{
+			font-size: 2em;
+			font-weight: bold;
+		}
+		.aftcon{
+			display: grid;
+			grid-template-columns: 70% 30%;
+		}
+		.thumb img{
+			transform: rotate(360);
+		}
+		.thumb{
+			background-color: white;
+		}
+/*footer*/
+		.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    margin-bottom: 15px;
+      }
+      footer{
+      background-color: rgba(0, 0, 0, 0.9);
+
+      }
+#links{
+	color: white;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+.footer input{
+	display: inline-block;
+	background-color: rgba(255,255,255,0.1);
+	border: 1px solid rgba(255,255,255,0.7);
+	margin: 5px 15px;
+	width: 40%;
+	border-radius: 3px;
+}  
+.contact{
+	color: white;
+}
+#con{
+	display: inline;
+	color: rgba(255,255,255,0.4);
+	margin-bottom: 3px;
+}
+#contact{
+	font-size: 20px;
+}
+textarea{
+	width: 87%;
+	margin-left: 15px;
+	background-color: rgba(255,255,255,0.1);
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 3px;
+}
+#comment{
+	color: white;
+margin-left: 12px;
+font-size: 20px;
+}
+.footnav{
+	padding-left: 40px;
+}
+.footnav li{
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+.footnav a{
+	color:  #f58634;
+	text-decoration: none;
+}
+.footnav a:hover{
+	color:  rgba(0, 255, 0, 0.7);
+	text-decoration: none;
+}
+ #soc{
+	margin-top: 10px;
+	font-size: 20px;
+}
+.contact i{
+	margin-right: 14px;
+}
+.footer button{
+	margin-left: 77%;
+	border-radius: 50px;
+	background-color:  #f58634;
+	border: none;
+	color: white;
+	padding: 3px 15px;
+	font-size: 12px;
+}
+.footer span{
+	border-bottom: 2px solid rgba(0, 255, 0, 0.7);
+}
+.copy {
+	display: inline;
+	color: rgba(255,255,255,0.4);
+	font-size: 13px;
+	margin-left: 10px;
+	margin: 30px 0px;
+	width: 100px;
+}
+#ti{
+	display: inline;
+	font-size: 13px;
+	margin-left: 700px;
+}
+
+
+
+/*registration page*/
+#regg{
+		font-weight: bold;
+		font-size: 2em;
+	}
+	.newww input{
+width: 50%;
+margin-left: 10px;
+border-radius: 10px;
+border: 1px solid black;
+padding-left: 15px;
+	}
+	.newww select{
+	margin-left: 10px;
+	width: 50%;
+	border-radius: 10px;
+border: 1px solid black;
+padding-left: 15px;	
+	}
+	.gri{
+		display: grid;
+		grid-template-columns: 70% 30%;
+	}
+	.gri button{
+		background-color: #f58634;
+		border:none;
+		border-radius: 10px;
+		color: white;
+		margin-left: 300px;margin-bottom: 100px;
+	}
+	.newww{
+		margin-left: 15px;
+	}
+	#first{
+ 		margin-left: 40px;
+ 	}
+ 	#other{
+ 		margin-left: 21px;
+ 	}
+ 	#birth{
+ 		margin-left: 18px;
+ 	}
+ 	#add{
+ 		margin-left: 60px;
+ 	}
+ 	#emai{
+ 		margin-left: 83px;
+ 	}
+ 	#passwor{
+ 		margin-left: 47px;
+ 	}
+ 	#reg{
+ 		margin-left: 29px;
+ 	}
+ .newww	.gend{
+ 		margin-left: 70px;
+ 	}
+/*registration page*/
